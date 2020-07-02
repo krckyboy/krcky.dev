@@ -4,6 +4,11 @@ import Name from '../components/name/Name'
 import Text from '../components/text/Text'
 import Icons from '../components/icons/icons'
 import Boxes from '../components/boxes/Boxes'
+import styled from 'styled-components'
+
+const Container = styled.div`
+    background-color: #0c1a2c;
+`
 
 const FirstSection = () => {
 	const fade = useSpring({
@@ -18,14 +23,16 @@ const FirstSection = () => {
 		to: { transform: 'scale(1.0)' },
 	})
 	return (
-		<animated.div className='container' style={fade}>
-			<animated.div className='textContainer' style={scale}>
-				<Name />
-				<Text />
+		<Container>
+			<animated.div className='containerFirstSection' style={fade}>
+				<animated.div className='textContainer' style={scale}>
+					<Name />
+					<Text />
+				</animated.div>
+				<Icons />
+				<Boxes />
 			</animated.div>
-			<Icons />
-			<Boxes />
-		</animated.div>
+		</Container>
 	)
 }
 
