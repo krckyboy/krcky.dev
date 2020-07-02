@@ -2,22 +2,52 @@ import React from 'react'
 import styled from 'styled-components'
 import SecondaryH from '../components/SecondaryH'
 import SectionContainer from '../components/SectionContainer'
+import Project from '../components/Project'
 
 const Container = styled.div``
 
 const ProjectsContainer = styled.div`
 	margin-top: 6.4rem;
-
 `
 
+const projects = [
+	{
+		websiteUrl: 'https://jelenacaldic.com/',
+		codeUrl: 'https://github.com/krckyboy/jelena_caldic',
+		name: 'JELENA ĆALDIĆ',
+		stack: 'React',
+		imgUrl: '/images/jelena_caldic_cut.png',
+	},
+	{
+		websiteUrl: 'https://jovana-painter-static.netlify.app/',
+		codeUrl: 'https://github.com/krckyboy/jovana_strapi',
+		name: 'JOVANA',
+		stack: 'React, Strapi',
+		imgUrl: '/images/jovana_cut.png',
+	},
+	{
+		websiteUrl: 'https://krckyboy.github.io/John-s-Bar/',
+		codeUrl: 'https://github.com/krckyboy/John-s-Bar',
+		name: 'JOHN’S BAR',
+		stack: 'HTML, SCSS, JS',
+		imgUrl: '/images/john_bar_cut.png',
+	},
+	{
+		websiteUrl: 'https://krckyboy.github.io/John_Smith_Photography/',
+		codeUrl: 'https://github.com/krckyboy/John_Smith_Photography',
+		name: 'JOHN PHOTOGRAPHY',
+		stack: 'HTML, SCSS, JS',
+		imgUrl: '/images/john_photography_cut.png',
+	},
+]
+
 const Skills = () => {
+	const projectsMapped = projects.map((p) => <Project {...p} key={p.name} />)
 	return (
 		<SectionContainer backgroundColor={' #13243A'}>
 			<Container>
 				<SecondaryH text={'PROJECTS'} iconSrc={'/images/box projects.png'} />
-				<ProjectsContainer>
-
-				</ProjectsContainer>
+				<ProjectsContainer>{projectsMapped}</ProjectsContainer>
 			</Container>
 		</SectionContainer>
 	)
