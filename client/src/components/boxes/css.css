@@ -1,0 +1,48 @@
+.containerPlx {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes anim1 {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.box {
+    position: absolute;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.box1 {
+    animation: anim1 3s infinite ease-in-out;
+}
+
+.box2 {
+    animation: anim1 3s infinite ease-in-out 2s;
+}
+
+.box3 {
+    animation: anim1 3s infinite ease-in-out 4s;
+}
+
+.box4 {
+    animation: anim1 3s infinite ease-in-out 6s;
+}
+
+.box5 {
+    animation: anim1 3s infinite ease-in-out 8s;
+}
+
+.box6 {
+    animation: anim1 3s infinite ease-in-out 10s;
+}

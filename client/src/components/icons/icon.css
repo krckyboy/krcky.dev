@@ -1,0 +1,74 @@
+.a {
+    display: inline-block;
+    transition: transform .2s;
+}
+
+.a:hover {
+    cursor: pointer;
+    transform: translateY(-5%);
+}
+
+.iconContainer {
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon {
+    margin-left: .8rem;
+    margin-right: .8rem;
+    width: 4rem;
+}
+
+@media only screen and (min-width: 640px) {
+    .icon {
+        width: 4.3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .icon {
+        width: 4.5rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .icon {
+        width: 4.7rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .icon {
+        width: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .icon {
+        width: 5.5rem;
+    }
+}
+
+@media only screen and (min-width: 2048px) {
+    .icon {
+        width: 6rem;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .icon {
+        width: 6.5rem;
+    }
+}
+
+@media only screen and (min-width: 3440px) {
+    .icon {
+        width: 7rem;
+    }
+}

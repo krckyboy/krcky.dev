@@ -1,0 +1,68 @@
+.bold {
+    font-weight: 800;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.textContainer {
+    padding: 1rem;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.text {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 640px) {
+    .text {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .text {
+        font-size: 1.9rem;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .text {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .text {
+        font-size: 2.1rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .text {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (min-width: 2048px) {
+    .text {
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .text {
+        font-size: 2.4rem;
+    }
+}
+
+@media only screen and (min-width: 3440px) {
+    .text {
+        font-size: 2.5rem;
+    }
+}
