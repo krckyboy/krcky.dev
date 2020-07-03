@@ -1,8 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
 	position: relative;
+
+	@media (min-width: 768px) {
+		max-width: 30%;
+	}
 
 	:not(:last-child) {
 		margin-bottom: 3.2rem;
@@ -11,10 +15,10 @@ const Container = styled.div`
 
 const ImageContainer = styled.div`
 	img {
-        height: 20rem;
-        object-fit: cover;
+		height: 20rem;
+		object-fit: cover;
 		max-width: 100%;
-		filter: ${(props) => (props.hovered ? 'brightness(50%)' : 'none')};
+		filter: ${(props) => (props.hovered ? 'brightness(30%)' : 'none')};
 	}
 
 	position: relative;
@@ -24,8 +28,9 @@ const LinksContainer = styled.div`
 	position: absolute;
 	top: 35%;
 	left: 50%;
-    transform: translate(-50%);
-    opacity: ${props => props.hovered ? '1' : '0'};
+	transform: translate(-50%);
+	transition: 1s all;
+	opacity: ${(props) => (props.hovered ? '1' : '0')};
 
 	font-weight: 500;
 	font-size: 1.6rem;
@@ -54,9 +59,12 @@ const ProjectFooter = styled.div`
 	border-top: solid #0a9d73;
 `
 
-const Project = ({ websiteUrl, codeUrl, name, stack, imgUrl, hoveredProps = false }) => {
-	const [hovered, setHovered] = useState(hoveredProps)
+const Project = ({ websiteUrl, codeUrl, name, stack, imgUrl }) => {
+	const [hovered, setHovered] = useState(false)
+	const [touched, setTouched] = useState(false)
+	const timeoutFunc = useRef(null)
 
+	// Show links and darken image
 	function setHoveredTrue() {
 		setHovered(true)
 	}
@@ -65,14 +73,33 @@ const Project = ({ websiteUrl, codeUrl, name, stack, imgUrl, hoveredProps = fals
 		setHovered(false)
 	}
 
+	function handleTouch() {
+		setHoveredTrue()
+		setTouched(true)
+	}
+
+	useEffect(() => {
+		// If there's a running timeout, cancel it
+		if (timeoutFunc.current !== null) {
+			console.log('Cancelling', timeoutFunc.current)
+			clearTimeout(timeoutFunc.current)
+		}
+
+		if (touched) {
+			timeoutFunc.current = setTimeout(() => {
+				setHoveredFalse()
+			}, 3000)
+		}
+	}, [hovered])
+
 	return (
 		<Container>
 			<ImageContainer
 				hovered={hovered}
 				onMouseEnter={setHoveredTrue}
-				onTouchStart={setHoveredTrue}
+				onTouchStart={handleTouch}
 				onMouseLeave={setHoveredFalse}
-                onTouchCancel={setHoveredFalse}
+				onTouchCancel={setHoveredFalse}
 			>
 				<img src={imgUrl} alt={name} />
 				<LinksContainer hovered={hovered}>

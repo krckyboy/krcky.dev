@@ -41,16 +41,22 @@ const projects = [
 	},
 ]
 
-const Skills = () => {
-	const projectsMapped = projects.map((p) => <Project {...p} key={p.name} />)
+const Projects = () => {
 	return (
 		<SectionContainer backgroundColor={' #13243A'}>
 			<Container>
 				<SecondaryH text={'PROJECTS'} iconSrc={'/images/box projects.png'} />
-				<ProjectsContainer>{projectsMapped}</ProjectsContainer>
+				<ProjectsContainer>
+					{projects.map((p) => (
+						<Project
+							{...p}
+							key={p.name}
+						/>
+					))}
+				</ProjectsContainer>
 			</Container>
 		</SectionContainer>
 	)
 }
 
-export default Skills
+export default Projects
