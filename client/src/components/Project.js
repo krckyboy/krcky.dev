@@ -5,7 +5,7 @@ const Container = styled.div`
 	position: relative;
 	flex-wrap: wrap;
 
-	@media (min-width: 434px) {
+	@media (min-width: 750px) {
 		flex: 0 0 364px;
 		max-width: 33.3333%;
 		min-width: 350px;
@@ -19,7 +19,8 @@ const Container = styled.div`
 
 const ImageContainer = styled.div`
 	img {
-		height: 20rem;
+		min-height: 22rem;
+		max-height: 40rem;
 		object-fit: cover;
 		width: 100%;
 		filter: ${(props) => (props.hovered ? 'brightness(30%)' : 'none')};
