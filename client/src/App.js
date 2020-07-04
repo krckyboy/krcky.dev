@@ -4,6 +4,7 @@ import About from './sections/About'
 import Skills from './sections/Skills'
 import Projects from './sections/Projects'
 import Footer from './sections/Footer'
+import Contact from './sections/Contact'
 import './App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 			<About />
 			<Skills />
 			<Projects />
+			<Contact />
 			<Footer />
 		</>
 	)
