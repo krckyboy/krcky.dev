@@ -4,10 +4,16 @@ import SecondaryH from '../components/SecondaryH'
 import SectionContainer from '../components/SectionContainer'
 import Project from '../components/Project'
 
-const Container = styled.div``
+const Container = styled.div`
+	max-width: 120rem;
+	margin: 0 auto;
+`
 
 const ProjectsContainer = styled.div`
 	margin-top: 6.4rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 `
 
 const projects = [
@@ -45,13 +51,10 @@ const Projects = () => {
 	return (
 		<SectionContainer backgroundColor={' #13243A'}>
 			<Container>
-				<SecondaryH text={'PROJECTS'} iconSrc={'/images/box projects.png'} />
+				<SecondaryH text={'PROJECTS'} iconSrc={'/images/box projects.svg'} />
 				<ProjectsContainer>
 					{projects.map((p) => (
-						<Project
-							{...p}
-							key={p.name}
-						/>
+						<Project {...p} key={p.name} />
 					))}
 				</ProjectsContainer>
 			</Container>

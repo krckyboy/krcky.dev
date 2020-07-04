@@ -3,9 +3,13 @@ import styled from 'styled-components'
 
 const Container = styled.div`
 	position: relative;
+	flex-wrap: wrap;
 
-	@media (min-width: 768px) {
-		max-width: 30%;
+	@media (min-width: 434px) {
+		flex: 0 0 364px;
+		max-width: 33.3333%;
+		min-width: 350px;
+		margin-right: 1rem;
 	}
 
 	:not(:last-child) {
@@ -17,7 +21,7 @@ const ImageContainer = styled.div`
 	img {
 		height: 20rem;
 		object-fit: cover;
-		max-width: 100%;
+		width: 100%;
 		filter: ${(props) => (props.hovered ? 'brightness(30%)' : 'none')};
 	}
 

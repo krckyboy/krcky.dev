@@ -5,9 +5,17 @@ import SectionContainer from '../components/SectionContainer'
 
 const Container = styled.div`
 	p {
-		font-weight: 500;
+		font-weight: 400;
 		font-size: 2.2rem;
 		line-height: 151.5%;
+
+		@media (min-width: 768px) and (min-height: 512px) {
+			font-size: 2.4rem;
+		}
+
+		@media (min-width: 1080px) and (min-height: 512px) {
+			font-size: 3.2rem;
+		}
 
 		&:last-child {
 			margin-top: 3.2rem;
@@ -18,6 +26,9 @@ const Container = styled.div`
 			font-weight: 600;
 		}
 	}
+
+	max-width: 120rem;
+	margin: 0 auto;
 `
 
 const ParagraphContainer = styled.div`
@@ -28,7 +39,7 @@ const About = () => {
 	return (
 		<SectionContainer backgroundColor={' #13243a'}>
 			<Container>
-				<SecondaryH text={'ABOUT ME'} iconSrc={'/images/box about.png'} />
+				<SecondaryH text={'ABOUT ME'} iconSrc={'/images/box about.svg'} />
 				<ParagraphContainer>
 					<p>
 						Musician and web developer born in 1991, currently living in{' '}
