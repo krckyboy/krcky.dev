@@ -1,39 +1,45 @@
 import React from 'react'
-import { useSpring, animated } from 'react-spring'
-import Name from '../components/name/Name'
-import Text from '../components/text/Text'
-import Icons from '../components/icons/icons'
-import Boxes from '../components/boxes/Boxes'
 import styled from 'styled-components'
 
-const Container = styled.div`
-    background-color: #0c1a2c;
+const Container = styled.footer`
+	background-color: #0c1a2c;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+	font-size: 1rem;
+	padding: 1.6rem;
+
+	@media (min-width: 512px) and (min-height: 512px) {
+		font-size: 1.2rem;
+	}
+
+	@media (min-width: 768px) and (min-height: 512px) {
+		font-size: 1.6rem;
+	}
+
+	a {
+		color: #00ffb6;
+		font-weight: 600;
+		text-decoration: none;
+	}
 `
 
-const FirstSection = () => {
-	const fade = useSpring({
-		config: { duration: 1000 },
-		from: { opacity: 0 },
-		to: { opacity: 1 },
-	})
+const FooterContainer = styled.div`
+	padding: 3.2rem 2.4rem;
+`
 
-	const scale = useSpring({
-		config: { duration: 250 },
-		from: { transform: 'scale(0.1)' },
-		to: { transform: 'scale(1.0)' },
-	})
+const Footer = () => {
 	return (
 		<Container>
-			<animated.div className='containerFirstSection' style={fade}>
-				<animated.div className='textContainer' style={scale}>
-					<Name />
-					<Text />
-				</animated.div>
-				<Icons />
-				<Boxes />
-			</animated.div>
+			<FooterContainer>
+				<p>
+					Copyright © All Rights Reserved. Developed by{' '}
+					<a href='https://krcky.dev/'>Dušan Todorović Krnjevac</a>
+				</p>
+			</FooterContainer>
 		</Container>
 	)
 }
 
-export default FirstSection
+export default Footer
