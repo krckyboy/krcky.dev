@@ -16,7 +16,7 @@ const ListContainer = styled.div`
 		font-size: 2.2rem;
 		line-height: 151.5%;
 		list-style: initial;
-		
+
 		@media (min-width: 768px) and (min-height: 512px) {
 			font-size: 2.4rem;
 		}
@@ -28,6 +28,11 @@ const ListContainer = styled.div`
 
 	li {
 		display: block;
+
+		@media (min-width: 1440px) and (min-height: 512px) {
+			display: inline-block;
+			width: 50%;
+		}
 
 		:not(:first-child) {
 			margin-top: 2.4rem;

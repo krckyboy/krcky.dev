@@ -17,7 +17,7 @@ const Container = styled.div`
 			font-size: 3.2rem;
 		}
 
-		&:last-child {
+		&:not(:first-child) {
 			margin-top: 3.2rem;
 		}
 
@@ -42,14 +42,28 @@ const About = () => {
 				<SecondaryH text={'ABOUT ME'} iconSrc={'/images/box about.svg'} />
 				<ParagraphContainer>
 					<p>
-						Musician and web developer born in 1991, currently living in{' '}
-						<span>Užice</span>, Serbia. I come from a musical family. I play
-						keyboard and accordion, and I also teach people how to play
-						accordion. I design and create web apps. I love animals.{' '}
+						Musician and web developer born in 1991 in Belgrade, currently
+						living in <span>Užice</span>, Serbia. I come from a musical family.
+						I play keyboard and accordion, and I also teach people how to play
+						accordion. I love animals.{' '}
+					</p>
+					<p>
+						I design and create web apps. I have one year of formal work
+						experience, working as a <span>front-end developer</span> in a
+						company called Boca Tech in Belgrade, although my assignments also
+						included UI/UX design (mock-ups, prototyping), data-entry and other.
+					</p>
+					<p>
+						My main tech stack is JavaScript. For client side, that would be{' '}
+						<span>React</span>, and for back-end, <span>Node.js</span>{' '}
+						(Express.js), and I am also familiar with <span>SQL</span>{' '}
+						(PostgreSQL) and <span>MongoDB</span>. My plan is to expand my
+						skills with new tools and frameworks such as Svelte.js, GraphQL and
+						other.
 					</p>
 					<p>
 						I accept new <span>clients</span> but I would also be interested in
-						a great remote full-time <span>job</span> with awesome colleagues!
+						a great full-time <span>job</span> with awesome colleagues!
 					</p>
 				</ParagraphContainer>
 			</Container>
