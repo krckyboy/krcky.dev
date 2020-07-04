@@ -52,6 +52,8 @@ const About = () => {
 						experience, working as a <span>front-end developer</span> in a
 						company called Boca Tech in Belgrade, although my assignments also
 						included UI/UX design (mock-ups, prototyping), data-entry and other.
+						I also do freelancing as a developer and UI/UX designer, so overall
+						I have over 2 years of experience.
 					</p>
 					<p>
 						My main tech stack is JavaScript. For client side, that would be{' '}
