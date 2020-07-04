@@ -4,10 +4,25 @@ import Icon from '../components/icons/icon'
 import facebook from '../components/icons/assets/facebook.svg'
 import gmail from '../components/icons/assets/gmail.svg'
 import instagram from '../components/icons/assets/instagram.svg'
-import SectionContainer from '../components/SectionContainer'
+
+const SectionContainer = styled.div`
+	padding: 4rem 2.4rem;
+	background-color: #0c1a2c;
+
+	@media (min-width: 768px) {
+		padding: 6rem 14rem;
+	}
+
+	@media (min-width: 960px) {
+		padding: 7rem 18rem;
+	}
+
+	@media (min-width: 1200px) {
+		padding: 8rem 24rem;
+	}
+`
 
 const Container = styled.div`
-	background-color: #0c1a2c;
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -35,10 +50,10 @@ const IconContainer = styled.div`
 
 const Footer = () => {
 	return (
-		<SectionContainer backgroundColor={'#0c1a2c'}>
+		<SectionContainer>
 			<Container>
 				<ContactContainer>
-					<p>Wanna hire me? Feel free to contact me!</p>
+					<p>Wanna hire me? Contact me!</p>
 					<IconContainer>
 						<Icon
 							src={facebook}
