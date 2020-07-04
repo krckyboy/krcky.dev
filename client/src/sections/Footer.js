@@ -7,15 +7,16 @@ const Container = styled.footer`
 	justify-content: center;
 	text-align: center;
 
-	font-size: 1rem;
+	line-height: 20px;
+	font-size: 1.2rem;
 	padding: 1.6rem;
 
 	@media (min-width: 512px) and (min-height: 512px) {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 
 	@media (min-width: 768px) and (min-height: 512px) {
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 	}
 
 	a {
@@ -35,7 +36,7 @@ const Footer = () => {
 			<FooterContainer>
 				<p>
 					Copyright © All Rights Reserved. Developed by{' '}
-					<a href='https://krcky.dev/'>Dušan Todorović Krnjevac</a>
+					<a href='https://krcky.dev/'>Dušan Todorović Krcky</a>
 				</p>
 			</FooterContainer>
 		</Container>
