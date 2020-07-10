@@ -13,16 +13,16 @@ const ListContainer = styled.div`
 
 	ul {
 		font-weight: 400;
-		font-size: 2.2rem;
+		font-size: 1.8rem;
 		line-height: 151.5%;
 		list-style: initial;
 
 		@media (min-width: 768px) and (min-height: 512px) {
-			font-size: 2.4rem;
+			font-size: 2rem;
 		}
 
 		@media (min-width: 1080px) and (min-height: 512px) {
-			font-size: 3.2rem;
+			font-size: 2.4rem;
 		}
 	}
 

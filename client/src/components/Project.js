@@ -38,7 +38,7 @@ const LinksContainer = styled.div`
 	opacity: ${(props) => (props.hovered ? '1' : '0')};
 
 	font-weight: 500;
-	font-size: 1.6rem;
+	font-size: 16px;
 	line-height: 30px;
 	display: flex;
 
@@ -54,7 +54,7 @@ const LinksContainer = styled.div`
 const ProjectFooter = styled.div`
 	background-color: white;
 	color: #0a9d73;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 16px;
 	line-height: 20px;
 	display: flex;

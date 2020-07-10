@@ -17,10 +17,10 @@ const Container = styled.div`
 const Heading = styled.h2`
 	font-size: 3.2rem;
 	margin-left: 2.4rem;
-	font-weight: 500;
+	font-weight: 600;
 
 	@media (min-width: 768px) {
-		font-size: 3.6rem;
+		font-size: 5rem;
 		margin-left: 3.6rem;
 	}
 `

@@ -6,19 +6,19 @@ import gmail from '../components/icons/assets/gmail.svg'
 import instagram from '../components/icons/assets/instagram.svg'
 
 const SectionContainer = styled.div`
-	padding: 4rem 2.4rem;
+	padding: 3rem 2.4rem;
 	background-color: #0c1a2c;
 
 	@media (min-width: 768px) {
-		padding: 6rem 14rem;
+		padding: 3rem 14rem;
 	}
 
 	@media (min-width: 960px) {
-		padding: 7rem 18rem;
+		padding: 4rem 18rem;
 	}
 
 	@media (min-width: 1200px) {
-		padding: 8rem 24rem;
+		padding: 5rem 24rem;
 	}
 `
 
