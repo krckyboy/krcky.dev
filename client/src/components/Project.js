@@ -61,7 +61,7 @@ const ProjectFooter = styled.div`
 	padding: 1.6rem 1.2rem;
 	justify-content: space-between;
 	margin-top: -3px;
-	border-top: solid #0a9d73;
+	border-top: solid 4px #0a9d73;
 `
 
 const Project = ({ websiteUrl, codeUrl, name, stack, imgUrl }) => {
