@@ -25,6 +25,13 @@ const projects = [
 		imgUrl: '/images/jelena_caldic_cut.png',
 	},
 	{
+		websiteUrl: 'https://krckyboy.github.io/test/',
+		codeUrl: 'https://github.com/krckyboy/test',
+		name: 'Citrus Form',
+		stack: 'HTML, SASS, JS',
+		imgUrl: '/images/citrus.png',
+	},
+	{
 		websiteUrl: 'https://jovana-painter-static.netlify.app/',
 		codeUrl: 'https://github.com/krckyboy/jovana_strapi',
 		name: 'Jovana',

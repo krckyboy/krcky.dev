@@ -52,13 +52,13 @@ const LinksContainer = styled.div`
 `
 
 const ProjectFooter = styled.div`
-	background-color: white;
+	background-color: #0d1c2f;
 	color: #0a9d73;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 20px;
 	display: flex;
-	padding: 1.2rem;
+	padding: 1.6rem 1.2rem;
 	justify-content: space-between;
 	margin-top: -3px;
 	border-top: solid #0a9d73;
