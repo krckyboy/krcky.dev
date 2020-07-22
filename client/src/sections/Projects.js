@@ -18,39 +18,46 @@ const ProjectsContainer = styled.div`
 
 const projects = [
 	{
+		websiteUrl: 'https://todorovic.dev/',
+		codeUrl: 'https://github.com/krckyboy/todorovic.dev',
+		name: 'todorovic.dev',
+		stack: 'React',
+		imgUrl: '/images/projects/todorovicdev.png',
+	},
+	{
 		websiteUrl: 'https://jelenacaldic.com/',
 		codeUrl: 'https://github.com/krckyboy/jelena_caldic',
 		name: 'Jelena Ćaldić',
 		stack: 'React',
-		imgUrl: '/images/jelena_caldic_cut.png',
-	},
-	{
-		websiteUrl: 'https://krckyboy.github.io/test/',
-		codeUrl: 'https://github.com/krckyboy/test',
-		name: 'Citrus Form',
-		stack: 'HTML, SASS, JS',
-		imgUrl: '/images/citrus.png',
+		imgUrl: '/images/projects/jelenacaldic.png',
 	},
 	{
 		websiteUrl: 'https://jovana-painter-static.netlify.app/',
 		codeUrl: 'https://github.com/krckyboy/jovana_strapi',
 		name: 'Jovana',
 		stack: 'React, Strapi',
-		imgUrl: '/images/jovana_cut.png',
+		imgUrl: '/images/projects/jovana.png',
+	},
+	{
+		websiteUrl: 'https://krckyboy.github.io/test/',
+		codeUrl: 'https://github.com/krckyboy/test',
+		name: 'Citrus Form',
+		stack: 'HTML, SASS, JS',
+		imgUrl: '/images/projects/test.png',
 	},
 	{
 		websiteUrl: 'https://krckyboy.github.io/John-s-Bar/',
 		codeUrl: 'https://github.com/krckyboy/John-s-Bar',
-		name: 'John\'s bar',
+		name: "John's bar",
 		stack: 'HTML, SASS, JS',
-		imgUrl: '/images/john_bar_cut.png',
+		imgUrl: '/images/projects/johnsbar.png',
 	},
 	{
 		websiteUrl: 'https://krckyboy.github.io/John_Smith_Photography/',
 		codeUrl: 'https://github.com/krckyboy/John_Smith_Photography',
 		name: 'JS Photography',
 		stack: 'HTML, SASS, JS',
-		imgUrl: '/images/john_photography_cut.png',
+		imgUrl: '/images/projects/johnsphotography.png',
 	},
 ]
 
