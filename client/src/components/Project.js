@@ -86,7 +86,6 @@ const Project = ({ websiteUrl, codeUrl, name, stack, imgUrl }) => {
 	useEffect(() => {
 		// If there's a running timeout, cancel it
 		if (timeoutFunc.current !== null) {
-			console.log('Cancelling', timeoutFunc.current)
 			clearTimeout(timeoutFunc.current)
 		}
 

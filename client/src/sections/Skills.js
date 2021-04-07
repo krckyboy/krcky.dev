@@ -47,8 +47,8 @@ const Skills = () => {
 				<SecondaryH text={'MY SKILLS'} iconSrc={'/images/box skills.svg'} />
 				<ListContainer>
 					<ul>
-						<li>- Responsive web design</li>
-						<li>- HTML5, CSS3</li>
+						<li>- Responsive Web Design</li>
+						<li>- HTML5, CSS3, Sass</li>
 						<li>- JavaScript (ES6+)</li>
 						<li>- React</li>
 						<li>- Node.js</li>

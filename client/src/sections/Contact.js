@@ -50,7 +50,7 @@ const IconContainer = styled.div`
 
 const Footer = () => {
 	return (
-		<SectionContainer>
+		<SectionContainer id={'contact'}>
 			<Container>
 				<ContactContainer>
 					<p>Wanna hire me? Contact me!</p>
