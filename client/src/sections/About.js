@@ -55,7 +55,7 @@ const About = () => {
                         experience. I've worked as a <span>front-end developer</span> in a
                         company called Boca Tech in Belgrade, for almost a year. I'm currently working as a medior
                         front-end developer for <a
-                        href="https://citrussys.com/" target={"_blank"}>Citrus Systems</a> in Belgrade. I also do
+                        href="https://citrussys.com/" target={"_blank"} rel="noopener noreferrer">Citrus Systems</a> in Belgrade. I also do
                         freelancing as a javascript developer and UI/UX designer.
                     </p>
                     <p>

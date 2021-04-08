@@ -13,7 +13,7 @@ const ProjectsContainer = styled.div`
 	margin-top: 6.4rem;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: space-between;
 `
 
 const projects = [
