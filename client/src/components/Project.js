@@ -4,13 +4,13 @@ import styled from 'styled-components'
 const Container = styled.div`
   position: relative;
   flex-wrap: wrap;
+  height: 100%;
 
-  @media (min-width: 750px) {
-    //flex: 0 0 364px;
+  @media (min-width: 960px) {
     flex: 1 0;
-    //max-width: 33.3333%;
-    min-width: 350px;
-    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
   }
 
   :not(:last-child) {
@@ -20,14 +20,17 @@ const Container = styled.div`
 
 const ImageContainer = styled.div`
   img {
-    min-height: 25rem;
-    max-height: 40rem;
     object-fit: cover;
     width: 100%;
+    height: 100%;
     filter: ${(props) => (props.hovered ? 'brightness(30%)' : 'none')};
   }
 
-  position: relative;
+  @media (min-width: 750px) {
+    flex: 1 0;
+    position: relative;
+  }
+
 `
 
 const LinksContainer = styled.div`
@@ -61,7 +64,7 @@ const ProjectFooter = styled.div`
   padding: 1.6rem 1.2rem;
   justify-content: space-between;
   margin-top: -3px;
-  border-top: solid 4px #0a9d73;
+  border-top: solid 6px #0a9d73;
 
   &, a, a:visited {
     color: #0a9d73;
