@@ -59,7 +59,7 @@ const About = () => {
                         freelancing as a javascript developer and UI/UX designer.
                     </p>
                     <p>
-                        My main tech stack is JavaScript. For client side, that would be{' '}
+                        My main tech stack is javascript. For client side, that would be{' '}
                         <span>React</span>, and for back-end, <span>Node.js</span>{' '}
                         (Express.js), and I am also familiar with <span>SQL</span>{' '}
                         (PostgreSQL) and <span>MongoDB</span>.
