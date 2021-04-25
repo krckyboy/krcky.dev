@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Icon from '../components/icons/icon'
-import facebook from '../components/icons/assets/facebook.svg'
 import gmail from '../components/icons/assets/gmail.svg'
 import linkedin from '../components/icons/assets/linkedin.svg'
 
@@ -55,11 +54,6 @@ const Footer = () => {
 				<ContactContainer>
 					<p>Wanna hire me? Contact me!</p>
 					<IconContainer>
-						<Icon
-							src={facebook}
-							alt='Facebook'
-							link='https://www.facebook.com/profile.php?id=100005125035371'
-						/>
 						<Icon
 							src={gmail}
 							alt='Gmail'
