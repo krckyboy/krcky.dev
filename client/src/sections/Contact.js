@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Icon from '../components/icons/icon'
 import facebook from '../components/icons/assets/facebook.svg'
 import gmail from '../components/icons/assets/gmail.svg'
-import instagram from '../components/icons/assets/instagram.svg'
+import linkedin from '../components/icons/assets/linkedin.svg'
 
 const SectionContainer = styled.div`
 	padding: 3rem 2.4rem;
@@ -66,9 +66,9 @@ const Footer = () => {
 							link='mailto:dusan.todorovic.2016@gmail.com'
 						/>
 						<Icon
-							src={instagram}
-							alt='Instagram'
-							link='https://www.instagram.com/krckyboy/'
+							src={linkedin}
+							alt='Linkedin'
+							link='https://www.linkedin.com/in/dusan-todorovic-krcky/'
 						/>
 					</IconContainer>
 				</ContactContainer>
