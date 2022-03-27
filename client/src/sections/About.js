@@ -46,23 +46,15 @@ const About = () => {
                 <SecondaryH text={'ABOUT ME'} iconSrc={'/images/box about.svg'}/>
                 <ParagraphContainer>
                     <p>
-                        Born in 1991 in Belgrade, Serbia. I've lived most of my life in Valjevo and I'm currently
-                        living in <span>Belgrade</span>. I play accordion, and I also teach others how to play it! I
-                        love animals!{' '}
+                        Born in 1991 in <span>Belgrade</span> (Serbia), where I'm currently living. I love animals, especially dogs!{' '}
                     </p>
                     <p>
-                        I design and create web apps. I have over two years of practical work
-                        experience. I've worked as a <span>front-end developer</span> in a
-                        company called Boca Tech in Belgrade, for almost a year. I'm currently working as a medior
-                        front-end developer for <a
-                        href="https://citrussys.com/" target={"_blank"} rel="noopener noreferrer">Citrus Systems</a> in Belgrade. I also do
-                        freelancing as a javascript developer and UI/UX designer.
+                        I design and create web apps. I have over 3 years of practical work
+                        experience. I'm currently working as a front-end lead in a company called <a
+                        href="https://citrussys.com/" target={"_blank"} rel="noopener noreferrer">Citrus Systems</a> in Belgrade.
                     </p>
                     <p>
-                        My main tech stack is javascript. For client side, that would be{' '}
-                        <span>React</span>, and for back-end, <span>Node.js</span>{' '}
-                        (Express.js), and I am also familiar with <span>SQL</span>{' '}
-                        (PostgreSQL) and <span>MongoDB</span>.
+                        My main tech stack is JavaScript - <span>Vue</span> and <span>React</span> on the front-end and <span>Node.js</span>{' '} on the back-end.
                     </p>
                     <p>
                         Do not hesitate to <a href="#contact">contact</a> me if you're looking for an experienced

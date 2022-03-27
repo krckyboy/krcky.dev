@@ -51,8 +51,10 @@ const Skills = () => {
 						<li>- HTML5, CSS3, Sass</li>
 						<li>- JavaScript (ES6+)</li>
 						<li>- React</li>
+						<li>- Vue</li>
 						<li>- Node.js</li>
-						<li>- MongoDB & SQL</li>
+						<li>- MongoDB</li>
+						<li>- SQL</li>
 						<li>- Version Control</li>
 						<li>- UI/UX: Figma</li>
 					</ul>
