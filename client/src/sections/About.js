@@ -50,8 +50,9 @@ const About = () => {
                     </p>
                     <p>
                         I design and create web apps. I have over 3 years of practical work
-                        experience. I'm currently working as a front-end lead in a company called <a
-                        href="https://citrussys.com/" target={"_blank"} rel="noopener noreferrer">Citrus Systems</a> in Belgrade.
+                        experience. I'm currently working as a front-end lead at <a
+                        href="https://citrussys.com/" target={"_blank"} rel="noopener noreferrer">Citrus Systems</a> in Belgrade. For more info about my career, check out my <a
+                        href="https://www.linkedin.com/in/dusan-todorovic-krcky/" target={"_blank"} rel="noopener noreferrer">Linkedin account</a>!
                     </p>
                     <p>
                         My main tech stack is JavaScript - <span>Vue</span> and <span>React</span> on the front-end and <span>Node.js</span>{' '} on the back-end.
