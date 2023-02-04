@@ -40,22 +40,30 @@ const ParagraphContainer = styled.div`
 `
 
 const About = () => {
+    const now = new Date();
+    const currentYear = now.getFullYear();
+    const yearsOfExperience = currentYear - 2019;
+
     return (
         <SectionContainer backgroundColor={' #13243a'}>
             <Container>
                 <SecondaryH text={'ABOUT ME'} iconSrc={'/images/box about.svg'}/>
                 <ParagraphContainer>
                     <p>
-                        Born in 1991 in <span>Belgrade</span> (Serbia), where I'm currently living. I love animals, especially dogs!{' '}
+                        Born in 1991 in <span>Belgrade</span> (Serbia), where I'm currently living. I am a father of a
+                        lovely girl Thalia and I love animals, especially dogs!{' '}
                     </p>
                     <p>
-                        I design and create web apps. I have over 3 years of practical work
+                        I design and create web apps. I have over {yearsOfExperience} years of practical work
                         experience. I'm currently working as a front-end lead at <a
-                        href="https://citrussys.com/" target={"_blank"} rel="noopener noreferrer">Citrus Systems</a> in Belgrade. For more info about my career, check out my <a
-                        href="https://www.linkedin.com/in/dusan-todorovic-krcky/" target={"_blank"} rel="noopener noreferrer">Linkedin account</a>!
+                        href="https://citrussys.com/" target={"_blank"} rel="noopener noreferrer">Citrus Systems</a> in
+                        Belgrade. For more info about my career, check out my <a
+                        href="https://www.linkedin.com/in/dusan-todorovic-krcky/" target={"_blank"}
+                        rel="noopener noreferrer">Linkedin account</a>!
                     </p>
                     <p>
-                        My main tech stack is JavaScript - <span>Vue</span> and <span>React</span> on the front-end and <span>Node.js</span>{' '} on the back-end.
+                        My main tech stack is JavaScript (<span>React</span>/<span>Vue</span>/<span>Node.js</span>). I
+                        am lately focusing on expanding my <span>NextJS</span> experience.
                     </p>
                     <p>
                         Do not hesitate to <a href="#contact">contact</a> me if you're looking for an experienced

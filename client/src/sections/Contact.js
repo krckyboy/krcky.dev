@@ -6,7 +6,7 @@ import linkedin from '../components/icons/assets/linkedin.svg'
 
 const SectionContainer = styled.div`
 	padding: 3rem 2.4rem;
-	background-color: #0c1a2c;
+	background-color: #13243a;
 
 	@media (min-width: 768px) {
 		padding: 3rem 14rem;

@@ -2,7 +2,7 @@ import React from 'react'
 import FirstSection from './sections/FirstSection'
 import About from './sections/About'
 import Skills from './sections/Skills'
-import Projects from './sections/Projects'
+// import Projects from './sections/Projects'
 import Footer from './sections/Footer'
 import Contact from './sections/Contact'
 import './App.css'
@@ -13,7 +13,7 @@ function App() {
 			<FirstSection />
 			<About />
 			<Skills />
-			<Projects />
+			{/*<Projects />*/}
 			<Contact />
 			<Footer />
 		</>
